@@ -16,8 +16,9 @@ export class CockpitComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onAddServer(){
+  onAddServer(serverNameInput){
     // these vals are binded to the dom
+    console.log(serverNameInput)
     this.serverCreated.emit({serverName:this.newServerName,serverContent:this.newServerContent})
   }
 
